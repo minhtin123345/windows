@@ -40,5 +40,4 @@ ENV RAM_SIZE="1G"
 ENV CPU_CORES="1"
 ENV DISK_SIZE="30G"
 ENV KVM="N"
-ENV BOOT_MODE="legacy"
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
