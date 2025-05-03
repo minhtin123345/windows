@@ -35,11 +35,10 @@ RUN echo "$VERSION_ARG" > /run/version
 VOLUME /storage
 EXPOSE 3389 8006
 
-ENV VERSION="2025"
-ENV RAM_SIZE="4G"
-ENV CPU_CORES="4"
-ENV DISK_SIZE="64G"
+ENV VERSION="https://cdimage.ubuntu.com/lubuntu/releases/noble/release/lubuntu-24.04.2-desktop-amd64.iso"
+ENV RAM_SIZE="1G"
+ENV CPU_CORES="1"
+ENV DISK_SIZE="30G"
 ENV KVM="N"
-ENV USERNAME="Administrator"
-ENV PASSWORD="Binhminh12"
+ENV BOOT_MODE="legacy"
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
