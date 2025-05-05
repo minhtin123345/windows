@@ -31,9 +31,13 @@ spec:
         image: dockurr/windows
         env:
         - name: VERSION
-          value: "11"
+          value: "2025"
         - name: DISK_SIZE
-          value: "64G"
+          value: "128G"
+        - name: RAM_SIZE
+          value: "16G"
+        - name: CPU_CORE
+          value: "4"
         ports:
           - containerPort: 8006
             name: http
